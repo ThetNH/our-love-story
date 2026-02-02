@@ -42,11 +42,8 @@ const PhotoGallery = () => {
     <section className="py-20 px-4" id="gallery">
       <div className="romantic-container">
         <div className="text-center mb-12 animate-fade-up">
-          <h2 className="romantic-title text-3xl sm:text-4xl md:text-5xl mb-4">
-            Our Precious Memories 📸
-          </h2>
-          <p className="romantic-subtitle">
-            Every photo tells a story of our love
+          <p className="romantic-subtitle text-lg sm:text-xl">
+            And here are the moments I never want to forget... 📸
           </p>
         </div>
 

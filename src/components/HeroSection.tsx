@@ -2,8 +2,8 @@ import { Heart, ChevronDown } from "lucide-react";
 import FloatingHearts from "./FloatingHearts";
 
 const HeroSection = () => {
-  const scrollToGallery = () => {
-    document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" });
+  const scrollToMusic = () => {
+    document.getElementById("music")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Button */}
-          <button onClick={scrollToGallery} className="romantic-button group">
+          <button onClick={scrollToMusic} className="romantic-button group">
             <Heart className="w-5 h-5 mr-2 group-hover:animate-heart-beat" />
             Explore Our Journey
           </button>
@@ -47,7 +47,7 @@ const HeroSection = () => {
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <button
-            onClick={scrollToGallery}
+            onClick={scrollToMusic}
             className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
           >
             <ChevronDown className="w-6 h-6 text-primary" />
