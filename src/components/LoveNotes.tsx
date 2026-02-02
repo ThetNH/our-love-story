@@ -45,11 +45,8 @@ const LoveNotes = () => {
     <section className="py-20 px-4" id="notes">
       <div className="romantic-container">
         <div className="text-center mb-12 animate-fade-up">
-          <h2 className="romantic-title text-3xl sm:text-4xl md:text-5xl mb-4">
-            Little Love Notes 💌
-          </h2>
-          <p className="romantic-subtitle">
-            Whispers from my heart to yours
+          <p className="romantic-subtitle text-lg sm:text-xl">
+            Before you go, here are a few things I always want you to remember... 💌
           </p>
         </div>
 

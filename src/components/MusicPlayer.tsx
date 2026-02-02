@@ -90,11 +90,8 @@ const MusicPlayer = () => {
     <section className="py-20 px-4 bg-secondary/30" id="music">
       <div className="romantic-container">
         <div className="text-center mb-12 animate-fade-up">
-          <h2 className="romantic-title text-3xl sm:text-4xl md:text-5xl mb-4">
-            Our Love Songs 🎵
-          </h2>
-          <p className="romantic-subtitle">
-            Pick a song, let it play, and let the memories unfold as you scroll 💕
+          <p className="romantic-subtitle text-lg sm:text-xl">
+            Before we begin, pick a song... let it play softly as I take you through our story 💕
           </p>
         </div>
 
