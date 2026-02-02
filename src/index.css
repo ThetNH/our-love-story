@@ -2,95 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Quicksand:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 20 33% 98%;
+    --foreground: 350 20% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 20 40% 97%;
+    --card-foreground: 350 20% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 20 40% 97%;
+    --popover-foreground: 350 20% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 346 60% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 340 30% 92%;
+    --secondary-foreground: 350 20% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 340 20% 94%;
+    --muted-foreground: 350 10% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 346 45% 75%;
+    --accent-foreground: 350 20% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 340 30% 88%;
+    --input: 340 30% 88%;
+    --ring: 346 60% 65%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Custom romantic colors */
+    --rose-soft: 346 60% 85%;
+    --rose-deep: 346 70% 50%;
+    --blush: 10 40% 95%;
+    --cream: 30 50% 97%;
+    --gold-soft: 38 60% 70%;
+    --burgundy: 346 80% 35%;
+    
+    /* Gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(346 60% 90%) 0%, hsl(340 40% 95%) 50%, hsl(20 40% 97%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(346 60% 92% / 0.8) 0%, hsl(20 33% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9) 0%, hsl(346 40% 97% / 0.8) 100%);
+    
+    /* Shadows */
+    --shadow-romantic: 0 10px 40px -10px hsl(346 60% 65% / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(346 60% 65% / 0.15);
+    --shadow-glow: 0 0 30px hsl(346 60% 65% / 0.3);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 350 25% 8%;
+    --foreground: 340 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 350 25% 12%;
+    --card-foreground: 340 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 350 25% 12%;
+    --popover-foreground: 340 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 346 55% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 350 30% 18%;
+    --secondary-foreground: 340 20% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 350 25% 15%;
+    --muted-foreground: 340 15% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 346 40% 25%;
+    --accent-foreground: 340 20% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 350 25% 20%;
+    --input: 350 25% 20%;
+    --ring: 346 55% 60%;
   }
 }
 
@@ -100,6 +101,167 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Quicksand', sans-serif;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer components {
+  .romantic-container {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .romantic-card {
+    background: var(--gradient-card);
+    @apply rounded-2xl p-6 backdrop-blur-sm;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .romantic-button {
+    @apply inline-flex items-center justify-center rounded-full px-8 py-3 font-medium transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--rose-deep)) 100%);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-romantic);
+  }
+
+  .romantic-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .romantic-input {
+    @apply w-full rounded-xl border-2 bg-white/80 px-6 py-4 text-center text-lg backdrop-blur-sm transition-all duration-300;
+    border-color: hsl(var(--border));
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .romantic-input:focus {
+    @apply outline-none;
+    border-color: hsl(var(--primary));
+    box-shadow: var(--shadow-glow);
+  }
+
+  .romantic-title {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-4xl font-semibold tracking-wide sm:text-5xl md:text-6xl;
+    color: hsl(var(--foreground));
+  }
+
+  .romantic-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-xl italic sm:text-2xl;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .love-letter {
+    font-family: 'Cormorant Garamond', serif;
+    @apply text-lg leading-relaxed sm:text-xl;
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  .text-gradient-romantic {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--rose-deep)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-romantic {
+    background: var(--gradient-romantic);
+  }
+
+  .bg-hero {
+    background: var(--gradient-hero);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+
+  .animate-heart-beat {
+    animation: heart-beat 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heart-beat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.05); }
+}
+
+@keyframes heart-float {
+  0% {
+    transform: translateY(100vh) rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(90vh) rotate(10deg) scale(1);
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.heart-particle {
+  position: fixed;
+  pointer-events: none;
+  animation: heart-float linear forwards;
+  z-index: 1;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm;
+}
+
+.lightbox-image {
+  @apply max-h-[90vh] max-w-[90vw] rounded-lg object-contain;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
