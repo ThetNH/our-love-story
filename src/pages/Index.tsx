@@ -1,14 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from "react";
+import PasswordPage from "@/components/PasswordPage";
+import AnniversaryWebsite from "@/components/AnniversaryWebsite";
 
 const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // Check if already authenticated (optional persistence)
+  useEffect(() => {
+    const auth = sessionStorage.getItem("anniversary-auth");
+    if (auth === "true") {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  const handlePasswordSuccess = () => {
+    sessionStorage.setItem("anniversary-auth", "true");
+    setIsAuthenticated(true);
+  };
+
+  if (!isAuthenticated) {
+    return <PasswordPage onSuccess={handlePasswordSuccess} />;
+  }
+
+  return <AnniversaryWebsite />;
 };
 
 export default Index;
