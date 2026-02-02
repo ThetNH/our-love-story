@@ -9,10 +9,10 @@ const AnniversaryWebsite = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
-      <PhotoGallery />
       <MusicPlayer />
-      <LoveNotes />
       <LoveLetter />
+      <PhotoGallery />
+      <LoveNotes />
       <Footer />
     </div>
   );

@@ -7,7 +7,7 @@ interface PasswordPageProps {
 }
 
 // Change this to your secret password
-const SECRET_PASSWORD = "iloveyou";
+const SECRET_PASSWORD = "watermelon";
 
 const PasswordPage = ({ onSuccess }: PasswordPageProps) => {
   const [password, setPassword] = useState("");
@@ -64,7 +64,7 @@ const PasswordPage = ({ onSuccess }: PasswordPageProps) => {
           </h1>
           
           <p className="romantic-subtitle text-lg">
-            Enter the secret password to unlock our love story 💖
+            What's the magic word that reminds you of our sweet summer days? 💖
           </p>
         </div>
 
@@ -83,7 +83,7 @@ const PasswordPage = ({ onSuccess }: PasswordPageProps) => {
 
           {error && (
             <p className="text-primary animate-fade-up text-sm">
-              Oops, that's not our special password 🥺 Try again.
+              Oops! Wrong babe it's something green. 🍉
             </p>
           )}
 
@@ -94,7 +94,7 @@ const PasswordPage = ({ onSuccess }: PasswordPageProps) => {
         </form>
 
         <p className="mt-6 text-sm text-muted-foreground">
-          Hint: What's the most beautiful phrase we share? 💕
+          Hint: Your favorite fruit 🍉💕
         </p>
       </div>
     </div>
