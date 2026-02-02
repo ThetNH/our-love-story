@@ -14,9 +14,8 @@ const Footer = () => {
           Forever Yours ❤️
         </p>
         
-        {/* Replace with your name */}
         <p className="text-muted-foreground">
-          — [Your Name]
+          — A Thet
         </p>
         
         <p className="mt-6 text-sm text-muted-foreground">
