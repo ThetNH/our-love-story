@@ -3,6 +3,7 @@ import PhotoGallery from "./PhotoGallery";
 import MusicPlayer from "./MusicPlayer";
 import LoveNotes from "./LoveNotes";
 import LoveLetter from "./LoveLetter";
+import LoveLanguages from "./LoveLanguages";
 import Footer from "./Footer";
 
 const AnniversaryWebsite = () => {
@@ -13,6 +14,7 @@ const AnniversaryWebsite = () => {
       <LoveLetter />
       <PhotoGallery />
       <LoveNotes />
+      <LoveLanguages />
       <Footer />
     </div>
   );
