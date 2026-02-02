@@ -1,35 +1,41 @@
 import { Heart, Sparkles, Star } from "lucide-react";
 
-// Edit these love notes with your own messages
+// Love notes with caring reminders
 const notes = [
   {
     id: 1,
-    message: "You make every day feel like a beautiful adventure. I love exploring life with you. 💕",
+    title: "Drink Water 💧",
+    message: "Babe, please drink more water today. I'm sure you forget when you're busy, but your body needs it. Keep a bottle nearby and sip throughout the day. Hydrated you is happy you ◝(ᵔᗜᵔ)◜",
     icon: Heart,
   },
   {
     id: 2,
-    message: "Your smile is my favorite thing in the whole world. It lights up my darkest days. ✨",
+    title: "Eat Well 🍽️",
+    message: "Don't skip meals, beautiful. Even when you're not hungry, eat something small. Your energy matters more than anything. Remember, food is fuel for that tiny brain of yours (⸝⸝> ᴗ•⸝⸝)",
     icon: Sparkles,
   },
   {
     id: 3,
-    message: "I fall more in love with you every single day. You're my forever person. 💖",
+    title: "Stay Warm 🧥",
+    message: "Wrap up warm, my baby. Don't be stubborn about jackets and sweaters. I want you cozy and comfortable, not shivering. Your warmth is my warmth.",
     icon: Star,
   },
   {
     id: 4,
-    message: "Thank you for being my best friend, my partner, and my everything. 🌹",
+    title: "Treat Yourself 🎁",
+    message: "Stop saving too much. Please spend on yourself. That thing you've been wanting? Get it. That treat you've been eyeing? Have it. You save so much for others - today, save some joy for yourself.",
     icon: Heart,
   },
   {
     id: 5,
-    message: "Every moment with you is a treasure I hold close to my heart. 💝",
+    title: "Sleep Early 🌙",
+    message: "Close those eyes before midnight, my love. Your rest is sacred. Those late night scrolls can wait. Tomorrow will be brighter with well-rested eyes.",
     icon: Sparkles,
   },
   {
     id: 6,
-    message: "You're not just my love, you're my home. Wherever you are, that's where I belong. 🏠💕",
+    title: "You're Enough 💕",
+    message: "Remember that you're already everything. No need to prove, no need to strive beyond what feels good. Just being you is more than enough for me, for everyone who loves you.",
     icon: Star,
   },
 ];
@@ -54,9 +60,12 @@ const LoveNotes = () => {
               className="romantic-card group hover:shadow-lg transition-all duration-300 animate-fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                  <note.icon className="w-6 h-6 text-primary group-hover:animate-heart-beat" />
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <note.icon className="w-5 h-5 text-primary group-hover:animate-heart-beat" />
+                  </div>
+                  <h3 className="font-serif font-semibold text-lg text-foreground">{note.title}</h3>
                 </div>
                 <p className="love-letter text-base leading-relaxed">
                   {note.message}

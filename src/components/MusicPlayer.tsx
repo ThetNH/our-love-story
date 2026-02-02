@@ -94,7 +94,7 @@ const MusicPlayer = () => {
             Our Love Songs 🎵
           </h2>
           <p className="romantic-subtitle">
-            The soundtrack of our journey together
+            Pick a song, let it play, and let the memories unfold as you scroll 💕
           </p>
         </div>
 

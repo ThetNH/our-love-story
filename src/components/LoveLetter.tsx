@@ -24,48 +24,30 @@ const LoveLetter = () => {
             </div>
 
             <div className="relative z-10">
-              <p className="love-letter mb-6">My Dearest Love,</p>
+              <p className="love-letter mb-6">My dearest love,</p>
               
-              {/* Edit this letter with your own heartfelt message */}
               <div className="love-letter space-y-6">
                 <p>
-                  Two years ago, my life changed forever when you walked into it. 
-                  What started as a beautiful beginning has blossomed into the most 
-                  incredible journey I could have ever imagined. Every day with you 
-                  feels like a gift I never knew I needed.
+                  Today marks another year of us, and my heart feels fuller than ever. From our first "hello" to this moment right now, every second with you has been a gift I never take for granted.
                 </p>
                 
                 <p>
-                  You have this magical way of making ordinary moments feel extraordinary. 
-                  Whether we're laughing at our silly jokes, cooking together in the kitchen, 
-                  or simply holding hands while watching the sunset, every moment with you 
-                  is precious to me.
+                  I cannot believe it's already been two years with you. Thank you for staying with me, for loving me, and for choosing me every single day. You've made my life happier, warmer, and better just by being in it.
                 </p>
                 
                 <p>
-                  Thank you for being my rock when times got tough, my cheerleader when 
-                  I needed encouragement, and my best friend through it all. You've taught 
-                  me what unconditional love truly means, and I'm forever grateful for 
-                  your patience, kindness, and endless support.
+                  Through every fight, every laugh, every moment, I'm grateful it's been you. I'm proud of us and how far we've come together.
                 </p>
                 
                 <p>
-                  As we celebrate our second anniversary, I want you to know that my love 
-                  for you grows stronger with each passing day. You are my today, my 
-                  tomorrow, and my forever. I can't wait to see what adventures await us 
-                  in the years to come.
-                </p>
-                
-                <p>
-                  Here's to a lifetime of love, laughter, and beautiful memories together. 
-                  I love you more than words could ever express.
+                  I love you more than words can explain, and I hope we get to celebrate many more years side by side. You mean everything to me.
                 </p>
               </div>
 
               <div className="mt-8 text-right">
-                <p className="love-letter italic">Forever and always yours,</p>
+                <p className="love-letter italic">Forever yours,</p>
                 <p className="romantic-title text-2xl mt-2 text-gradient-romantic">
-                  [Your Name] 💕
+                  A Thet 💕
                 </p>
               </div>
             </div>
