@@ -3,21 +3,21 @@ import { X } from "lucide-react";
 
 // Replace these with your actual photo URLs
 const photos = [
-  { id: 1, src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800", alt: "Memory 1" },
-  { id: 2, src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800", alt: "Memory 2" },
-  { id: 3, src: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800", alt: "Memory 3" },
-  { id: 4, src: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800", alt: "Memory 4" },
-  { id: 5, src: "https://images.unsplash.com/photo-1544911845-1f34a3eb46b1?w=800", alt: "Memory 5" },
-  { id: 6, src: "https://images.unsplash.com/photo-1529519195486-16945ed23682?w=800", alt: "Memory 6" },
-  { id: 7, src: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=800", alt: "Memory 7" },
-  { id: 8, src: "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=800", alt: "Memory 8" },
-  { id: 9, src: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=800", alt: "Memory 9" },
-  { id: 10, src: "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800", alt: "Memory 10" },
-  { id: 11, src: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800", alt: "Memory 11" },
-  { id: 12, src: "https://images.unsplash.com/photo-1529519195486-16945ed23682?w=800", alt: "Memory 12" },
-  { id: 13, src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800", alt: "Memory 13" },
-  { id: 14, src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800", alt: "Memory 14" },
-  { id: 15, src: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800", alt: "Memory 15" },
+  { id: 1, src: "/images/IMG1.JPG", alt: "" },
+{ id: 2, src: "/images/IMG2.JPG", alt: "" },
+{ id: 3, src: "/images/IMG3.JPG", alt: "" },
+{ id: 4, src: "/images/IMG4.JPG", alt: "" },
+{ id: 5, src: "/images/IMG5.JPG", alt: "" },
+{ id: 6, src: "/images/IMG6.JPG", alt: "" },
+{ id: 7, src: "/images/IMG7.JPG", alt: "" },
+{ id: 8, src: "/images/IMG8.JPG", alt: "" },
+{ id: 9, src: "/images/IMG9.JPG", alt: "" },
+{ id: 10, src: "/images/IMG10.JPG", alt: "" },
+{ id: 11, src: "/images/IMG11.JPG", alt: "" },
+{ id: 12, src: "/images/IMG12.JPG", alt: "" },
+{ id: 13, src: "/images/IMG13.JPG", alt: "" },
+{ id: 14, src: "/images/IMG14.JPG", alt: "" },
+{ id: 15, src: "/images/IMG15.JPG", alt: "" },
 ];
 
 const PhotoGallery = () => {

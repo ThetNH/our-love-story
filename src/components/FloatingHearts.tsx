@@ -27,7 +27,7 @@ const FloatingHearts = () => {
     };
 
     // Create initial hearts
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 50; i++) {
       setTimeout(createHeart, i * 500);
     }
 

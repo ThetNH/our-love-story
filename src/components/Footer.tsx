@@ -19,7 +19,7 @@ const Footer = () => {
         </p>
         
         <p className="mt-6 text-sm text-muted-foreground">
-          Made with 💕 for the love of my life
+          Made with love for the love of my life
         </p>
       </div>
     </footer>
