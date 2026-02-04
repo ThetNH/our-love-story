@@ -94,7 +94,7 @@ const PasswordPage = ({ onSuccess }: PasswordPageProps) => {
         </form>
 
         <p className="mt-6 text-sm text-muted-foreground">
-          Hint: Your favorite fruit 🍉💕
+          Hint: Your favorite fruit 💕
         </p>
       </div>
     </div>

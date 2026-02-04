@@ -6,21 +6,22 @@ const InteractiveLoveMeter = () => {
   const [hearts, setHearts] = useState<{ id: number; x: number; y: number }[]>([]);
 
   const messages = [
-    "Click the heart! 💕",
-    "I love you! 💗",
-    "More than yesterday! 💖",
-    "Less than tomorrow! 💝",
-    "You're my everything! 💞",
-    "My heart beats for you! 💓",
-    "Forever and always! 💘",
-    "To infinity! ♾️💕",
-    "And beyond! 🚀💖",
-    "You're my soulmate! 👫💕",
-    "My best friend! 🤝💗",
-    "My safe place! 🏠💖",
-    "My happy place! 😊💝",
-    "My whole world! 🌍💞",
-    "My universe! 🌌💓",
+    "Click the heart!",
+    "I love you!",
+    "More than yesterday!",
+    "Less than tomorrow!",
+    "You're my everything!",
+    "My heart beats for you!",
+    "Forever and always!",
+    "To infinity!",
+    "And beyond!",
+    "You're my soulmate!",
+    "My best friend!",
+    "My safe place!",
+    "My happy place!",
+    "My whole world!",
+    "My universe!",
+    "I will never stop loving you.",
   ];
 
   const handleClick = (e: React.MouseEvent) => {
