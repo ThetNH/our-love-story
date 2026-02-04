@@ -83,7 +83,7 @@ const PasswordPage = ({ onSuccess }: PasswordPageProps) => {
 
           {error && (
             <p className="text-primary animate-fade-up text-sm">
-              Oops! Wrong babe it's something green. 🍉
+              Oops! Wrong babe it's something green. 
             </p>
           )}
 
