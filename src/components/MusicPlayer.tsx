@@ -52,14 +52,33 @@ const MusicPlayer = () => {
       }
     };
 
+    const handleRepeat = () => {
+      if (audio) {
+        audio.currentTime = 0;
+        if (isPlaying) {
+          audio.play();
+        }
+      }
+    };
+
     audio.addEventListener("timeupdate", updateProgress);
-    audio.addEventListener("ended", handleNext);
+    audio.addEventListener("ended", handleRepeat);
 
     return () => {
       audio.removeEventListener("timeupdate", updateProgress);
-      audio.removeEventListener("ended", handleNext);
+      audio.removeEventListener("ended", handleRepeat);
     };
-  }, [currentSongIndex]);
+  }, [currentSongIndex, isPlaying]);
+
+  const handleSeek = (e: React.MouseEvent<HTMLDivElement>) => {
+    const audio = audioRef.current;
+    if (!audio || !audio.duration) return;
+    
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const newTime = (clickX / rect.width) * audio.duration;
+    audio.currentTime = newTime;
+  };
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -137,7 +156,10 @@ const MusicPlayer = () => {
             </div>
 
             {/* Progress bar */}
-            <div className="w-full h-2 bg-secondary rounded-full mb-6 overflow-hidden">
+            <div 
+              className="w-full h-2 bg-secondary rounded-full mb-6 overflow-hidden cursor-pointer hover:h-3 transition-all"
+              onClick={handleSeek}
+            >
               <div
                 className="h-full bg-gradient-to-r from-primary to-rose-deep rounded-full transition-all duration-300"
                 style={{ width: `${progress}%` }}
