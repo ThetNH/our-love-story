@@ -1,39 +1,39 @@
 import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Volume2, VolumeX, Music, SkipForward, SkipBack } from "lucide-react";
 
-// Add 'cover' property to each song - USE SIMPLE PLACEHOLDERS FIRST
 const songs = [
   {
     id: 1,
     title: "Transform",
     artist: "Daniel Caesar",
-    src: "/audio/transform_final.mp3",
-    cover: "/images/transform.jpg", // Make sure this file exists!
+    src: "https://la2ognf65w70qtia.public.blob.vercel-storage.com/audio/transform_final.mp3",
+    cover: "/images/transform.jpg",
   },
   {
     id: 2,
     title: "Prove it",
     artist: "21 Savage",
-    src: "/audio/Prove_it_final.mp3",
+    src: "https://la2ognf65w70qtia.public.blob.vercel-storage.com/audio/Prove_it_final.mp3",
     cover: "/images/prove_it.jpg",
   },
   {
     id: 3,
     title: "All to Myself",
     artist: "Future",
-    src: "/audio/alltomyself.mp3",
+    src: "https://la2ognf65w70qtia.public.blob.vercel-storage.com/audio/alltomyself.mp3",
     cover: "/images/all-to-myself.jpg",
   },
   {
     id: 4,
     title: "Always",
     artist: "Daniel Caesar",
-    src: "/audio/always.mp3",
+    src: "https://la2ognf65w70qtia.public.blob.vercel-storage.com/audio/always.mp3",
     cover: "/images/always.jpg",
   },
 ];
 
 const MusicPlayer = () => {
+  // ... rest of your code stays exactly the same ...
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
